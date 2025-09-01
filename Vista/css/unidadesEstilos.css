@@ -1,0 +1,41 @@
+body{
+    font-family:'Arial Narrow';
+}
+
+/*---MENU DE NAVEGACION*/
+.sidebar-custom {
+    background: #e2e3e5;
+    border-right: 1px solid #dee2e6;
+    min-width: 180px;
+    width: 220px;
+    height: 100vh;
+    padding: 1.5rem 1rem;
+    position: relative;
+}
+
+.sidebar-custom h5 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.sidebar-custom .nav-link {
+    color: #495057;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+    padding: 0.5rem 1rem;
+}
+
+.sidebar-custom .nav-link.active,
+.sidebar-custom .nav-link:hover {
+    background: #f7f7f7 ;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.paginacion-unidades {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+}
