@@ -86,7 +86,7 @@
     </nav>
     <section class="home">
         <div class="text">
-            Inicio
+            Esto es una prueba de git
         </div>
     </section>
 
