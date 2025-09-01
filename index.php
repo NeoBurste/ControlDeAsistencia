@@ -47,13 +47,13 @@
                         </a>
                     </li>
                     <li class="nav-links">
-                        <a href="#">
+                        <a href="Vista/Unidades/unidades.php">
                             <i class='bx  bx-home-alt-2 icons'></i>
                             <span class="text nav-text">Unidades</span>
                         </a>
                     </li>
                     <li class="nav-links">
-                        <a href="#">
+                        <a href="Vista/OrdenesInternas/ordenesInternasInicio.php">
                             <i class='bx  bx-home-alt-2 icons'></i>
                             <span class="text nav-text">Ordenes Internas</span>
                         </a>

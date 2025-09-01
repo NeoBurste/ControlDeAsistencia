@@ -327,6 +327,54 @@ body.dark .switch::before {
     gap: 1rem;
 }
 
+/* TABLA */
+
+
+.table {
+    background-color: var(--sidebar-color, #f8f9fa);
+    color: var(--text-color, #23272f);
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 0.97rem;
+}
+
+.table th {
+    background-color: var(--primary-color-light, #eceff4) !important;
+    color: var(--primary-color, #695cfe) !important;
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-color, #695cfe);
+}
+
+.table td {
+    background-color: transparent;
+    color: inherit;
+}
+
+.table tbody tr:hover {
+    background-color: var(--primary-color-light, #eceff4) !important;
+    transition: background 0.2s;
+}
+
+.col-acciones {
+    text-align: center;
+    min-width: 120px;
+}
+
+/* Botones personalizados */
+.btn-outline-secondary {
+    border-color: var(--primary-color, #695cfe);
+    color: var(--primary-color, #695cfe);
+    background: transparent;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline-secondary:hover, .btn-outline-secondary:focus {
+    background: var(--primary-color, #695cfe);
+    color: #fff;
+    border-color: var(--primary-color, #695cfe);
+}
+
 
 
 

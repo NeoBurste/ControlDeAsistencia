@@ -193,7 +193,7 @@
                                 <th>RUT</th>
                                 <th>Nombre</th>
                                 <th>Razón Social</th>
-                                <th class="col-acciones"></th>
+                                <th class="col-acciones">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
