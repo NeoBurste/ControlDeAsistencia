@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/funcionariosEstilos.css">
+    <link rel="stylesheet" href="../css/funcionariosEstilos1.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -151,8 +151,8 @@
             require_once '../../Modelo/conexion.php';
             $result = $mysqli->query("SELECT run, nombre, cargo FROM funcionarios ORDER BY nombre ASC");
             ?>
-            <div class="container mt-4">
-                <table class="table table-bordered table-hover align-middle">
+            <div class="table-funcionarios-wrapper">
+                <table class="table-funcionarios" id="tablaFuncionarios">
                     <thead class="table-ligth">
                         <tr>
                             <th>RUN</th>

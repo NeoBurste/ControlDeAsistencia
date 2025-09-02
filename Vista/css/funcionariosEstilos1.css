@@ -301,3 +301,57 @@ body.dark .switch::before {
     left: 88px;
     width: calc(100% - 88px);
 }
+
+
+/* Tabla compacta */
+
+.table-funcionarios-wrapper{
+  width: 100%;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.table-funcionarios {
+  width: auto;
+  min-width: 420px;
+  border-collapse: collapse;
+  background: var(--sidebar-color, #f8f9fa);
+  color: var(--text-color, #23272f);
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.table-funcionarios th,
+.table-funcionarios td {
+  padding: 0.45em 1em;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.table-funcionarios th {
+  background: var(--primary-color-light, #eceff4);
+  color: var(--primary-color, #695cfe);
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary-color, #695cfe);
+}
+
+.table-funcionarios tr:last-child td{
+  border-bottom: none;
+}
+
+.table-funcionarios tbody tr:hover{
+  background: var(--primary-color-light, #eceff4);
+  transition: background 0.2s;
+}
+
+.col-acciones {
+  text-align: center;
+  min-width: 120px;
+}
+
