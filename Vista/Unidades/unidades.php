@@ -61,6 +61,12 @@
                         </a>
                     </li>
                     <li class="nav-links">
+                        <a href="../Funcionarios/funcionarios.php">
+                            <i class='bx  bx-home-alt-2 icons'></i>
+                            <span class="text nav-text">Funcionarios</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
                         <a href="../../Vista/OrdenesInternas/ordenesInternasInicio.php">
                             <i class='bx  bx-home-alt-2 icons'></i>
                             <span class="text nav-text">Ordenes Internas</span>

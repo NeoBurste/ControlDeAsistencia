@@ -56,13 +56,19 @@
                             </a>
                         </li>
                         <li class="nav-links">
-                            <a href="RegistroDeBienes.php">
+                            <a href="../RegistroDeBienes/RegistroDeBienes.php">
                                 <i class='bx  bx-home-alt-2 icons'></i>
                                 <span class="text nav-text">Registro de Bienes</span>
                             </a>
                         </li>
                         <li class="nav-links">
-                            <a href="../OrdenesInternas/ordenesInternasInicio.php">
+                            <a href="../Funcionarios/funcionarios.php">
+                                <i class='bx  bx-home-alt-2 icons'></i>
+                                <span class="text nav-text">Funcionarios</span>
+                            </a>
+                        </li>
+                        <li class="nav-links">
+                            <a href="ordenesInternasInicio.php">
                                 <i class='bx  bx-home-alt-2 icons'></i>
                                 <span class="text nav-text">Ordenes Internas</span>
                             </a>
