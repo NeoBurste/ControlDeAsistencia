@@ -8,8 +8,8 @@
 }
 
 :root {
-  --body-color: #e4e9f7;
-  --sidebar-color: #fff;
+  --body-color: #fff;
+  --sidebar-color: #e4e9f7;
   --primary-color: #49d4d4;
   --primary-color-light: #f6f5ff;
   --toggle-color: #ddd;
@@ -287,7 +287,7 @@ body.dark .switch::before {
     position: relative;
     left: 250px;
     height: 100vh;
-    width: calc(100 250px);
+    width: calc(100% - 250px);
     background: var(--body-color);
     transition: var(--tran-05);
 }

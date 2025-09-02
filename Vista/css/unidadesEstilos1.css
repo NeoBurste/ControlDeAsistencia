@@ -8,8 +8,8 @@
 }
 
 :root {
-  --body-color: #e4e9f7;
-  --sidebar-color: #fff;
+  --body-color: #fff;
+  --sidebar-color: #e4e9f7;
   --primary-color: #49d4d4;
   --primary-color-light: #f6f5ff;
   --toggle-color: #ddd;
@@ -161,8 +161,8 @@ body.dark .sidebar header .toggle {
   color: var(--text-color);
 }
 
-.sidebar .menu{
-    margin-top: 25px;
+.sidebar .menu {
+  margin-top: 25px;
 }
 
 .sidebar .search-box {
@@ -235,12 +235,12 @@ body.dark .sidebar li a:hover .text {
   opacity: 0;
 }
 
-body.dark .menu-bar .mode i.sun{
-    opacity: 1;
+body.dark .menu-bar .mode i.sun {
+  opacity: 1;
 }
 
-body.dark .menu-bar .mode i.moon{
-    opacity: 0;
+body.dark .menu-bar .mode i.moon {
+  opacity: 0;
 }
 
 .menu-bar .mode .toggle-switch {
@@ -282,24 +282,60 @@ body.dark .switch::before {
   left: 24px;
 }
 
-
-.home{
-    position: relative;
-    left: 250px;
-    height: 100vh;
-    width: calc(100 250px);
-    background: var(--body-color);
-    transition: var(--tran-05);
+.home {
+  position: relative;
+  left: 180px;
+  height: 100vh;
+  width: calc(100 250px);
+  background: var(--body-color);
+  transition: var(--tran-05);
 }
 
-.home .text{
-    font-size: 30px;
-    font-weight: 500;
-    color: var(--text-color);
-    padding: 8px 40px;
+.home .text {
+  color: var(--text-color);
+  padding: 8px 40px;
 }
 
-.sidebar.close ~ .home{
-    left: 88px;
-    width: calc(100% - 88px);
+.sidebar.close ~ .home {
+  left: 88px;
+  width: calc(100% - 88px);
+}
+
+/* ESTILOS PARA LA PAGINACION */
+
+.paginacion-unidades {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+/*  tablas */
+
+section.home .table {
+    font-size: 0.80rem;
+    max-width: 90%;
+    background: var(--sidebar-color, #f8f9fa);
+    color: var(--text-color, #23272f);
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+section.home .table th,
+section.home .table td {
+    padding: 0.4em 0.7em;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+section.home .table th {
+    background: var(--primary-color-light, #eceff4);
+    color: var(--primary-color, #695cfe);
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-color, #695cfe);
+}
+
+section.home .table tbody tr:hover {
+    background: var(--primary-color-light, #eceff4);
+    transition: background 0.2s;
 }

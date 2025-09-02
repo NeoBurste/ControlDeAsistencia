@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Vista/css/indexEstilos.css">
+    <link rel="stylesheet" href="Vista/css/indexEstilos1.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <title>Inicio</title>
 </head>
@@ -53,6 +53,12 @@
                         </a>
                     </li>
                     <li class="nav-links">
+                        <a href="Vista/RegistroDeBienes/RegistroDeBienes.php">
+                            <i class='bx  bx-home-alt-2 icons'></i>
+                            <span class="text nav-text">Registro de Bienes</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
                         <a href="Vista/OrdenesInternas/ordenesInternasInicio.php">
                             <i class='bx  bx-home-alt-2 icons'></i>
                             <span class="text nav-text">Ordenes Internas</span>
@@ -63,14 +69,14 @@
             <div class="bottom-content">
                 <li class="">
                     <a href="#">
-                        <i class='bx  bx-arrow-out-left-square-half icons'></i> 
+                        <i class='bx  bx-arrow-out-left-square-half icons'></i>
                         <span class="text nav-text">Cerrar Sesión</span>
                     </a>
                 </li>
                 <li class="mode">
                     <div class="moon-sun">
-                        <i class='bx  bx-moon icons moon'></i> 
-                        <i class='bx  bx-sun icons sun'></i> 
+                        <i class='bx  bx-moon icons moon'></i>
+                        <i class='bx  bx-sun icons sun'></i>
                     </div>
                     <span class="mode-text text">Modo Oscuro</span>
 
@@ -82,11 +88,10 @@
                 </li>
             </div>
         </div>
-
     </nav>
     <section class="home">
         <div class="text">
-            Esto es una prueba de git
+
         </div>
     </section>
 
