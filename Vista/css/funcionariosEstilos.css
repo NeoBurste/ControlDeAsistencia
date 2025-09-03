@@ -322,7 +322,6 @@ body.dark .switch::before {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
   border-radius: 5px;
   overflow: hidden;
-  margin: 0 auto;
 }
 
 .table-funcionarios th,
@@ -354,4 +353,3 @@ body.dark .switch::before {
   text-align: center;
   min-width: 120px;
 }
-

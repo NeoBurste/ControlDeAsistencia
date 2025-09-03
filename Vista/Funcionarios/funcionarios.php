@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/funcionariosEstilos1.css">
+    <link rel="stylesheet" href="../css/funcionariosEstilos.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -100,7 +100,7 @@
     <section class="home">
         <div class="text">
             <div class="funcionarios-header">
-                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                <button type="button" class="btn btn-outline-secondary btn-funcionario" data-bs-toggle="modal"
                     data-bs-target="#modalAgregarFuncionario">
                     Agregar Funcionario
                 </button>
@@ -146,18 +146,57 @@
                     </div>
                 </div>
             </div>
+            <!--- FIN MODAL--->
 
+            <!--- MODAL EDITAR FUNCIONARIO --->
+            <div class="modal fade" id="modalEditarFuncionario" tabindex="-1" aria-labelledby="modalEditarFuncionarioLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form id="formEditarFuncionario" action="../../Controlador/Funcionarios/editarFuncionario.php" method="POST" autocomplete="off">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalEditarFuncionarioLabel">Editar Funcionario</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-labelledby="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="respuestaEditarFuncionario"></div>
+                                <input type="hidden" id="edit_run_original" name="run_original">
+                                <div class="mb-3">
+                                    <label for="edit_run" class="form-label">RUN</label>
+                                    <input type="text" class="form-control" id="edit_run" name="run" required maxlength="12" autocomplete="off">
+                                    <div class="invalid-feedback" id="editRunFeedback"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="edit_nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="edit_nombre" name="nombre" required maxlength="100" autocomplete="off">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="edit_cargo" class="form-label">Cargo</label>
+                                    <input type="text" class="form-control" id="edit_cargo" name="cargo" required maxlength="50" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-primary">Guardar Cambio</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--- FIN MODAL EDITAR --->
+
+            <!--- TABLA FUNCIONARIOS --->
             <?php
             require_once '../../Modelo/conexion.php';
             $result = $mysqli->query("SELECT run, nombre, cargo FROM funcionarios ORDER BY nombre ASC");
             ?>
             <div class="table-funcionarios-wrapper">
                 <table class="table-funcionarios" id="tablaFuncionarios">
-                    <thead class="table-ligth">
+                    <thead class="table-light">
                         <tr>
                             <th>RUN</th>
                             <th>Nombre</th>
                             <th>Cargo</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -167,18 +206,30 @@
                                     <td><?php echo htmlspecialchars($row['run']); ?></td>
                                     <td><?php echo htmlspecialchars($row['nombre']); ?></td>
                                     <td><?php echo htmlspecialchars($row['cargo']); ?></td>
+                                    <td class="col-acciones">
+                                        <button class="btn btn-outline-secondary btn-eliminar"
+                                            data-run="<?php echo htmlspecialchars($row['run']); ?>">
+                                            Eliminar
+                                        </button>
+                                        <button class="btn btn-outline-secondary btn-modificar"
+                                            data-run="<?php echo htmlspecialchars($row['run']); ?>"
+                                            data-nombre="<?php echo htmlspecialchars($row['nombre']); ?>"
+                                            data-cargo="<?php echo htmlspecialchars($row['cargo']) ?>">
+                                            Editar
+                                        </button>
+                                    </td>
                                 </tr>
                             <?php endwhile; ?>
                         <?php else: ?>
                             <tr>
-                                <td colspan="3" class="text-center">No hay funcionarios registrados.</td>
+                                <td colspan="4" class="text-center">No hay funcionarios registrados.</td>
                             </tr>
                         <?php endif; ?>
                     </tbody>
                 </table>
                 <!--- Fin de tabla -->
-
             </div>
+            <div id="paginacionTabla" class="d-flex justify-content-center mt-3"></div>
         </div>
     </section>
 
@@ -188,6 +239,7 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
     <script src="../js/funcionarios.js"></script>
+    <script src="../js/paginacionFuncionarios.js"></script>
 </body>
 
 </html>
