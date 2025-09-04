@@ -1,12 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
     function paginarTabla(tablaId, filasPorPagina = 5) {
         const tabla = document.getElementById(tablaId);
-        const filasOriginales = Array.from(tabla.querySelectorAll("tbody tr"));
+        if (!tabla) return;
+
+        // Tomamos solo filas reales (evitamos mensajes de "no hay datos")
+        const filasOriginales = Array.from(tabla.querySelectorAll("tbody tr"))
+            .filter(fila => fila.querySelectorAll("td").length > 1);
+
+        if (filasOriginales.length === 0) return;
+
         let paginaActual = 1;
 
-        // Crear contenedor de paginación DENTRO del table-responsive
+        // Crear contenedor de paginación
         const contenedorPaginacion = document.createElement("div");
-        contenedorPaginacion.classList.add("paginacion-proveedores");
+        contenedorPaginacion.classList.add(
+            "paginacion-proveedores",
+            "d-flex",
+            "justify-content-center",
+            "gap-2",
+            "mt-3"
+        );
         tabla.parentNode.insertBefore(contenedorPaginacion, tabla.nextSibling);
 
         function mostrarPagina(pagina) {

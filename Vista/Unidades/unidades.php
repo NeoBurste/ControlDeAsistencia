@@ -8,7 +8,7 @@
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../Vista/css/unidadesEstilos1.css">
+    <link rel="stylesheet" href="../../Vista/css/unidadesEstilos.css">
     <title>Unidades</title>
 </head>
 
@@ -218,9 +218,9 @@
                 $result = $mysqli->query("SELECT idUnidad, codigo, run, nombre, telefono, correo_electronico FROM Unidad ORDER BY nombre ASC");
                 ?>
 
-                <div class="container mt-5">
-                    <div class="table-responsive">
-                        <table class="table table-bordered table align-middle" id="tablaUnidades">
+                <div class="container mt-5 container-tabla">
+                    <div>
+                        <table class="table table align-middle tabla-estilo" id="tablaUnidades">
                             <thead class="table-secondary">
                                 <tr>
                                     <th>Código</th>

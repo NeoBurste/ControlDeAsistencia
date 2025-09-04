@@ -8,7 +8,7 @@
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../Vista/css/BienesEstilos.css">
+    <link rel="stylesheet" href="../../Vista/css/BienesEstilos1.css">
     <title>Registro de Bienes</title>
 </head>
 
@@ -142,7 +142,7 @@
 
                             <!-- Tabla de productos -->
                             <div class="table-responsive mt-4">
-                                <table class="table table-bordered table-hover" id="tablaProductos">
+                                <table class="table table-hover tabla-estilo" id="tablaProductos">
                                     <thead class="table-secondary">
                                         <tr>
                                             <th>ID Producto</th>
@@ -330,7 +330,7 @@
                             <br>
                             <br>
 
-                            <table class="table table-bordered table-hover" id="tablaCategorias">
+                            <table class="table table-hover tabla-estilo" id="tablaCategorias">
                                 <thead class="table-secondary">
                                     <tr>
                                         <th>ID Categoría</th>

@@ -8,7 +8,7 @@
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../Vista/css/proveedoresEstilos1.css">
+    <link rel="stylesheet" href="../../Vista/css/proveedoresEstilos.css">
     <title>Proveedores</title>
 </head>
 
@@ -68,7 +68,7 @@
                         </a>
                     </li>
                     <li class="nav-links">
-                        <a href="#">
+                        <a href="../OrdenesInternas/ordenesInternasInicio.php">
                             <i class='bx  bx-home-alt-2 icons'></i>
                             <span class="text nav-text">Ordenes Internas</span>
                         </a>
@@ -201,7 +201,7 @@
 
                 <div class="container mt-5 d-flex">
                     <div class="table-responsive">
-                        <table class="table table-bordered table align-middle" id="tablaProveedores">
+                        <table class="table table align-middle tabla-estilo" id="tablaProveedores">
                             <thead class="table-secondary">
                                 <tr>
                                     <th>RUT</th>

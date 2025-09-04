@@ -161,8 +161,8 @@ body.dark .sidebar header .toggle {
   color: var(--text-color);
 }
 
-.sidebar .menu {
-  margin-top: 25px;
+.sidebar .menu{
+    margin-top: 25px;
 }
 
 .sidebar .search-box {
@@ -235,12 +235,12 @@ body.dark .sidebar li a:hover .text {
   opacity: 0;
 }
 
-body.dark .menu-bar .mode i.sun {
-  opacity: 1;
+body.dark .menu-bar .mode i.sun{
+    opacity: 1;
 }
 
-body.dark .menu-bar .mode i.moon {
-  opacity: 0;
+body.dark .menu-bar .mode i.moon{
+    opacity: 0;
 }
 
 .menu-bar .mode .toggle-switch {
@@ -282,44 +282,24 @@ body.dark .switch::before {
   left: 24px;
 }
 
-.home {
-  position: relative;
-  left: 250px;
-  height: 100vh;
-  width: calc(100 250px);
-  background: var(--body-color);
-  transition: var(--tran-05);
+
+.home{
+    position: relative;
+    left: 250px;
+    height: 100vh;
+    width: calc(100 250px);
+    background: var(--body-color);
+    transition: var(--tran-05);
 }
 
-.home .text {
-  font-size: 30px;
-  font-weight: 500;
-  color: var(--text-color);
-  padding: 8px 40px;
+.home .text{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 8px 40px;
 }
 
-.sidebar.close ~ .home {
-  left: 88px;
-  width: calc(100% - 88px);
-}
-
-/* Tablas */
-
-.table {
-  font-size: 0.9rem;
-}
-
-.td-acciones {
-  white-space: nowrap;
-  width: 1%;
-  min-width: 120px; /* Ajusta según tus botones */
-  max-width: 150px;
-  text-align: center;
-}
-
-.botones-horizontales {
-  display: flex;
-  gap: 0.5rem; /* Espacio entre botones */
-  justify-content: center;
-  align-items: center;
+.sidebar.close ~ .home{
+    left: 88px;
+    width: calc(100% - 88px);
 }

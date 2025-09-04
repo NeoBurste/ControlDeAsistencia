@@ -97,6 +97,12 @@ body.dark {
   transition: var(--tran-02);
 }
 
+.menu-links {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  list-style: none; /* quita viñetas */
+}
+
 .sidebar header {
   position: relative;
 }
@@ -161,8 +167,8 @@ body.dark .sidebar header .toggle {
   color: var(--text-color);
 }
 
-.sidebar .menu{
-    margin-top: 25px;
+.sidebar .menu {
+  margin-top: 25px;
 }
 
 .sidebar .search-box {
@@ -235,12 +241,12 @@ body.dark .sidebar li a:hover .text {
   opacity: 0;
 }
 
-body.dark .menu-bar .mode i.sun{
-    opacity: 1;
+body.dark .menu-bar .mode i.sun {
+  opacity: 1;
 }
 
-body.dark .menu-bar .mode i.moon{
-    opacity: 0;
+body.dark .menu-bar .mode i.moon {
+  opacity: 0;
 }
 
 .menu-bar .mode .toggle-switch {
@@ -282,135 +288,56 @@ body.dark .switch::before {
   left: 24px;
 }
 
-
-.home{
-    position: relative;
-    left: 400px;
-    height: 100vh;
-    width: calc(100 250px);
-    background: var(--body-color);
-    transition: var(--tran-05);
+.home {
+  position: relative;
+  left: 250px;
+  height: 100vh;
+  width: calc(100 250px);
+  background: var(--body-color);
+  transition: var(--tran-05);
 }
 
-.home .text{
-    font-size: 30px;
-    font-weight: 500;
-    color: var(--text-color);
-    padding: 8px 40px;
+.home .text {
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 8px 40px;
 }
 
-.sidebar.close ~ .home{
-    left: 88px;
-    width: calc(100% - 88px);
+.sidebar.close ~ .home {
+  left: 88px;
+  width: calc(100% - 88px);
 }
 
+/* TABLA */
 
-
-
-/* Contenedor del formulario */
-.orden-form {
-    width: 650px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
+.tabla-estilo {
+  background-color: var(--sidebar-color, #f8f9fa);
+  color: var(--text-color, #23272f);
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 0.97rem;
+  text-align: center;
 }
 
-/* Tablas */
-.tabla-datos,
-.tabla-items {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+.tabla-estilo th {
+  background-color: var(--primary-color-light, #eceff4) !important;
+  color: var(--primary-color, #695cfe) !important;
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary-color, #695cfe);
 }
 
-.tabla-items th {
-    background: #f2f2f2;
-    text-align: center;
+.tabla-estilo td {
+  background-color: transparent;
+  color: inherit;
 }
 
-/* Inputs */
-.orden-form input {
-    border: none;
-    width: 80%;
-    text-align: center;
+.tabla-estilo tbody tr:hover {
+  background-color: var(--primary-color-light, #eceff4) !important;
+  transition: background 0.2s;
 }
 
-.orden-form .tabla-datos input {
-    border-bottom: 1px solid #000;
-    max-width: 11rem;
+.col-acciones {
+  text-align: center;
+  min-width: 120px;
 }
-
-.orden-form select {
-    border: none;
-    border-bottom: 1px solid #000;
-}
-
-.orden-form input[type="text"] {
-    text-align: left;
-}
-
-.orden-form textarea {
-    width: 100%;
-    resize: none;
-}
-
-.tabla-items textarea{
-    border: none;
-    field-sizing: content;
-}
-
-
-/* Estilo para inputs y textarea dentro de la tabla de items */
-.tabla-items input,
-.tabla-items textarea {
-    border-radius: 0;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 2px 4px;
-    background: transparent;
-    font-size: 12px;
-}
-
-.justificacion-container textarea {
-    width: 100%;
-    border: 1px solid #000;
-    padding: 5px;
-    font-size: 12px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    field-sizing: content;
-}
-
-
-
-
-
-/* Estilos para la seccion de firmas*/
-.firmas-container {
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 60px;
-    text-align: center;
-}
-
-.firma {
-    flex: 1;
-    margin: 0 20px;
-}
-
-.firma p {
-    margin-bottom: 60px; /* espacio para la firma */
-    font-weight: bold;
-}
-
-.linea-firma {
-    border-top: 1px solid #000;
-    width: 80%;
-    margin: 0 auto;
-}
-
-
-

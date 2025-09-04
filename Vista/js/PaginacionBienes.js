@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Productos con filtro
-    paginarTabla("tablaProductos", 6, "filtroCategoria");
+    paginarTabla("tablaProductos", 10, "filtroCategoria");
     // Categorías sin filtro
     paginarTabla("tablaCategorias", 8);
 });

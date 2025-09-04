@@ -97,6 +97,12 @@ body.dark {
   transition: var(--tran-02);
 }
 
+.menu-links {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  list-style: none; /* quita viñetas */
+}
+
 .sidebar header {
   position: relative;
 }
@@ -161,8 +167,8 @@ body.dark .sidebar header .toggle {
   color: var(--text-color);
 }
 
-.sidebar .menu {
-  margin-top: 25px;
+.sidebar .menu{
+    margin-top: 25px;
 }
 
 .sidebar .search-box {
@@ -235,12 +241,12 @@ body.dark .sidebar li a:hover .text {
   opacity: 0;
 }
 
-body.dark .menu-bar .mode i.sun {
-  opacity: 1;
+body.dark .menu-bar .mode i.sun{
+    opacity: 1;
 }
 
-body.dark .menu-bar .mode i.moon {
-  opacity: 0;
+body.dark .menu-bar .mode i.moon{
+    opacity: 0;
 }
 
 .menu-bar .mode .toggle-switch {
@@ -282,60 +288,74 @@ body.dark .switch::before {
   left: 24px;
 }
 
-.home {
-  position: relative;
-  left: 180px;
-  height: 100vh;
-  width: calc(100 250px);
-  background: var(--body-color);
-  transition: var(--tran-05);
+
+.home{
+    position: relative;
+    left: 250px;
+    height: 100vh;
+    width: calc(100 250px);
+    background: var(--body-color);
+    transition: var(--tran-05);
 }
 
-.home .text {
-  color: var(--text-color);
-  padding: 8px 40px;
+.home .text{
+    color: var(--text-color);
+    padding: 8px 40px;
 }
 
-.sidebar.close ~ .home {
-  left: 88px;
-  width: calc(100% - 88px);
+.sidebar.close ~ .home{
+    left: 88px;
+    width: calc(100% - 88px);
 }
 
-/* ESTILOS PARA LA PAGINACION */
 
-.paginacion-unidades {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 8px;
+/* Tabla compacta */
+
+.table-funcionarios-wrapper{
+  width: 100%;
+  overflow-x: auto;
+  margin: 2rem 0;
 }
 
-/*  tablas */
-
-section.home .table {
-    font-size: 0.80rem;
-    max-width: 90%;
-    background: var(--sidebar-color, #f8f9fa);
-    color: var(--text-color, #23272f);
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+.table-funcionarios {
+  width: auto;
+  min-width: 420px;
+  border-collapse: collapse;
+  background: var(--sidebar-color, #f8f9fa);
+  color: var(--text-color, #23272f);
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-section.home .table th,
-section.home .table td {
-    padding: 0.4em 0.7em;
-    white-space: nowrap;
-    vertical-align: middle;
+.table-funcionarios th,
+.table-funcionarios td {
+  padding: 0.45em 1em;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+  white-space: nowrap;
+  vertical-align: middle;
 }
 
-section.home .table th {
-    background: var(--primary-color-light, #eceff4);
-    color: var(--primary-color, #695cfe);
-    font-weight: 600;
-    border-bottom: 2px solid var(--primary-color, #695cfe);
+.table-funcionarios th {
+  background: var(--primary-color-light, #eceff4);
+  color: var(--primary-color, #695cfe);
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary-color, #695cfe);
 }
 
-section.home .table tbody tr:hover {
-    background: var(--primary-color-light, #eceff4);
-    transition: background 0.2s;
+.table-funcionarios tr:last-child td{
+  border-bottom: none;
+}
+
+.table-funcionarios tbody tr:hover{
+  background: var(--primary-color-light, #eceff4);
+  transition: background 0.2s;
+}
+
+.col-acciones {
+  text-align: center;
+  min-width: 120px;
 }

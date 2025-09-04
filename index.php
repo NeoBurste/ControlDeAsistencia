@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Vista/css/indexEstilos1.css">
+    <link rel="stylesheet" href="Vista/css/indexEstilos.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <title>Inicio</title>
 </head>
@@ -53,13 +53,13 @@
                         </a>
                     </li>
                     <li class="nav-links">
-                        <a href="Vista/RegistroDeBienes/RegistroDeBienes.php">
+                        <a href="Vista/RegistroDeBienes/RegistroDeProductos.php">
                             <i class='bx  bx-home-alt-2 icons'></i>
                             <span class="text nav-text">Registro de Bienes</span>
                         </a>
                     </li>
                     <li class="nav-links">
-                        <a href="../Funcionarios/funcionarios.php">
+                        <a href="Vista/Funcionarios/funcionarios.php">
                             <i class='bx  bx-home-alt-2 icons'></i>
                             <span class="text nav-text">Funcionarios</span>
                         </a>
